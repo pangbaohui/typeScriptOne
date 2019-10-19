@@ -28,6 +28,8 @@
 
 //private 私有
 //protected 保护
+
+
 class Parent {
     // private age:number
     protected age:number
@@ -102,18 +104,68 @@ const info4 = new Info('pbh',27,'man')
 
 
 // 抽象类  abstract
-abstract class People {
+// abstract class People {
+//     constructor(public name:string){}
+//     public abstract printName():void
+// }
+// class Man extends People{
+//     constructor(name:string){
+//         super(name)
+//         this.name = name
+//     }
+//     public printName(){
+//         console.log(this.name)
+//     }
+// }
+// const m = new Man('PBH');
+// m.printName()
+
+// abstract class People {
+//     public abstract _name:string
+//     abstract get insideName():string
+//     abstract set insideName(val:string)
+// }
+// class P extends People{
+//     public _name:string
+//     public insideName:string
+// }
+
+class People {
     constructor(public name:string){}
-    public abstract printName():void
 }
-class Man extends People{
-    constructor(name:string){
-        super(name)
-        this.name = name
-    }
-    public printName(){
-        console.log(this.name)
-    }
+
+const p2:People = new People('pbh')
+
+// interface FoodInterface {
+//     type:string
+// }
+// class FaceClass implements FoodInterface{
+//     // @ts-ignore
+//     type:string
+// }
+
+// class A {
+//     // @ts-ignore
+//     protected name:string
+// }
+// interface I extends A{}
+// class B extends A implements I{
+//     // @ts-ignore
+//     public name:string
+// }
+
+const create =<T>(c:new() =>T):T=>{
+    return new c ()
 }
-const m = new Man('PBH');
-m.printName()
+// @ts-ignore
+export class Infos {
+    public age: number
+
+    constructor(age: number) {
+        this.age = 18
+    }
+
+}
+
+// @ts-ignore
+console.log(create<Infos>(Infos).age)
