@@ -130,11 +130,11 @@ const info4 = new Info('pbh',27,'man')
 //     public insideName:string
 // }
 
-class People {
-    constructor(public name:string){}
-}
-
-const p2:People = new People('pbh')
+// class People {
+//     constructor(public name:string){}
+// }
+//
+// const p2:People = new People('pbh')
 
 // interface FoodInterface {
 //     type:string
