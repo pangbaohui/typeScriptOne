@@ -136,17 +136,17 @@ console.log(countup());
 // countUp.count
 // 2
 //以下为示例 向方法中添加属性
-interface Counter {
-    ():void,
-    count:number
-}
-const getCounter = ():Counter =>{
-    const c=()=>{c.count++}
-    c.count = 0
-    return c
-}
-const counter:Counter = getCounter();
-counter();
-console.log(counter.count);
-counter();
-console.log(counter.count);
+// interface Counter {
+//     ():void,
+//     count:number
+// }
+// const getCounter = ():Counter =>{
+//     const c=()=>{c.count++}
+//     c.count = 0
+//     return c
+// }
+// const counter:Counter = getCounter();
+// counter();
+// console.log(counter.count);
+// counter();
+// console.log(counter.count);
