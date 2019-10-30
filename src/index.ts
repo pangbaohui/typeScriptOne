@@ -10,4 +10,5 @@
 // import './example/inference-compatibility'
 // import './example/advanced-type-1'
 // import "./example/advanced-type-2"
-import './modules/index'
+// import './modules/index'
+import './ts-modules/index'
